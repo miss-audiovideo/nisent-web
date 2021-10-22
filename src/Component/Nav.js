@@ -1,67 +1,53 @@
 import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
-import {BrowserRouter, Link} from "react-router-dom";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 
 
 function Nav() {
 
   return (
+    <>
+    <Router>
     <ReactBootStrap.Nav variant="pills"  style={{background: "crimson", color:"white"}}>
-       <Link to="">
-       <ReactBootStrap.NavDropdown title="Products" id="nav-dropdown" >
-        <ReactBootStrap.NavDropdown.Item >CMX Sentinel</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >CMX Stream</ReactBootStrap.NavDropdown.Item>
+      <ReactBootStrap.NavDropdown title="Products" id="nav-dropdown" >
+        <ReactBootStrap.NavDropdown.Item ><Link to="/products/sentinel">CMX Sentinel</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/products/stream">CMX Stream</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      </Link>
-
-      <Link to=""   >
       <ReactBootStrap.NavDropdown title="Trendius" id="nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item >Predective Analytics</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Performance Analytics</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/trendius/predective">Predective Analytics</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/trendius/performance">Performance Analytics</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      </Link>
-
-      <Link to ="">
       <ReactBootStrap.NavDropdown title="Engineering" id="nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item >Acoustics & Pulsation</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Vibration and Noise</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >FMEA</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Intergrity & Reliability</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Surge & Fluid Dynamics</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Fitness for Services</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/acoustics">Acoustics & Pulsation</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/vibration">Vibration and Noise</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/fmea">FMEA</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/intergrity">Intergrity & Reliability</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/surge">Surge & Fluid Dynamics</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/engineering/fitness">Fitness for Services</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      </Link>
-      
-      <Link to ="">
       <ReactBootStrap.NavDropdown title="PlantMORE" id="nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item >Turnaround</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Balancing & Alignment</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >O&M</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Commisioning and Startup</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >ESP</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Field Condition Monitoring</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/turnaround">Turnaround</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/balancing">Balancing & Alignment</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/o&m">O&M</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/commisioning">Commisioning and Startup</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/ESP">ESP</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/plant/monitoring">Field Condition Monitoring</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      </Link>
-
-      <Link to ="">
       <ReactBootStrap.NavDropdown title="Prespectives" id="nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item >Whitepaper</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Resources</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Blogs</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/whitepaper">Whitepaper</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/resources">Resources</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/blogs">Blogs</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      </Link>
-
-      <Link to ="">
       <ReactBootStrap.NavDropdown title="Company" id="nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item >About Us</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Leadership</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Policies</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Sustanibility</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item >Careers</ReactBootStrap.NavDropdown.Item>
-      </ReactBootStrap.NavDropdown>
-      </Link>
-      
+        <ReactBootStrap.NavDropdown.Item ><Link to="/about">About Us</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/leadership">Leadership</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/policies">Policies</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/sustanibility">Sustanibility</Link></ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item ><Link to="/careers">Careers</Link></ReactBootStrap.NavDropdown.Item>
+      </ReactBootStrap.NavDropdown>      
     </ReactBootStrap.Nav>
+    </Router>
+    </>
   );
 }
 
