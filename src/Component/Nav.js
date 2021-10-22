@@ -8,8 +8,8 @@ function Nav() {
   return (
     <>
     <Router>
-    <ReactBootStrap.Nav variant="pills"  style={{background: "crimson", color:"white"}}>
-      <ReactBootStrap.NavDropdown title="Products" id="nav-dropdown" >
+    <ReactBootStrap.Nav variant="pills"  style={{background: "crimson",textDecoration:"none",fontSize:"18px"}}>
+      <ReactBootStrap.NavDropdown title="Products" id="nav-dropdown"  >
         <ReactBootStrap.NavDropdown.Item ><Link to="/products/sentinel">CMX Sentinel</Link></ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item ><Link to="/products/stream">CMX Stream</Link></ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
