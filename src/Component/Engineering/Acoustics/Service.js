@@ -1,10 +1,10 @@
 import React from 'react';
-import next from './img/next.png';
-import one from './img/one.png';
-import image from './img/image.png';
-import two from './img/two.png';
-import pac2 from './img/pac2.jpg';
-import three from './img/three.png';
+import next from '../Acoustics/img/next.png';
+import one from '../Acoustics/img/one.png';
+import image from '../Acoustics/img/image.png';
+import two from '../Acoustics/img/two.png';
+import pac2 from '../Acoustics/img/pac2.jpg';
+import three from '../Acoustics/img/three.png';
 
 
 class Service extends React.Component {

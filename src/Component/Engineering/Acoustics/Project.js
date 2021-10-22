@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './img/image.png';
+import image from '../Acoustics/img/image.png';
 
 class Project extends React.Component {
   render() {

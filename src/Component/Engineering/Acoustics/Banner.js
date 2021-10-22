@@ -1,6 +1,6 @@
 import React from 'react';
-import next from './img/next.png'
-import banner from './img/banner/banner.png'
+import next from '../Acoustics/img/next.png'
+import banner from '../Acoustics/img/banner/banner.png'
 
 class Banner extends React.Component {
     render() {
